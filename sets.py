@@ -11,7 +11,7 @@ my_set = set(my_list)
 print(type(my_set))
 
 # adding elements to a set
-# add for one item
+# add for one itemm
 
 h = 15
 my_set.add(h)
