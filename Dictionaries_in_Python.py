@@ -63,5 +63,8 @@ def mode_fun():
     pass
 
 def main():
-    duplicates(arr)
+    #duplicates(arr)
+    my_list = [2,3,4]
+    my_dict = dict(my_list)
+    print(my_dict.items())
 main()
