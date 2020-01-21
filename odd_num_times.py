@@ -1,22 +1,23 @@
-def odd_occurence (my_list):
-    minimum = -10000000
-    key = - 1000000000000
-    new_dict = {}
-    for i in my_list:
-        if i not in new_dict:
-            new_dict[i] = 1
-        else:
-            new_dict[i] += 1
-
-    for i in new_dict:
-        if (new_dict[i])%2 == 1:
-            minimum = new_dict[i]
-            key = i
-    print("The number {} occurred {} times".format(key, minimum))
+def rverseArray(arr, start, end):
+    while (start < end):
+        temp = arr[start]
+        arr[start] = arr[end]
+        arr[end] = temp
+        start += 1
+        end = end - 1
 
 
+# Function to left rotate arr[] of size n by d
+def leftRotate(arr, d):
+    if d == 0:
+        return
+    n = len(arr)
+    rverseArray(arr, 0, d - 1)
+    rverseArray(arr, d, n - 1)
+    rverseArray(arr, 0, n - 1)
 def main():
-    mylist=[1,1,3,4,3]
-    odd_occurence(mylist)
-
+    the_string =list( 'abc')
+    print(leftRotate(the_string, 1))
+    the_string = str(the_string)
+    print(the_string)
 main()
