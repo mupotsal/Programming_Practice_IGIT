@@ -58,6 +58,7 @@ def duplicates(my_list):
             minimum = new_dict[i]
             key = i
     print("The number {} occurred {} times".format(key, minimum))
+    
 
 def mode_fun():
     pass
