@@ -11,11 +11,8 @@ def reverseWords( s: str) -> str:
         rev_str += x
         if i == len(splitted_sent) - 1:
             rev_str += ""
-        else:
+        else:u8
             rev_str += " "
     return rev_str
-def main():
-    sente = "My name is Liberty"
-    print(reverseWords(sente))
 
 main()
